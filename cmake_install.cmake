@@ -37,6 +37,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/luoxing/cpp/iptables/libipq/cmake_install.cmake")
   include("/home/luoxing/cpp/iptables/libiptc/cmake_install.cmake")
   include("/home/luoxing/cpp/iptables/libxtables/cmake_install.cmake")
+  include("/home/luoxing/cpp/iptables/extensions/cmake_install.cmake")
+  include("/home/luoxing/cpp/iptables/iptables/cmake_install.cmake")
 
 endif()
 
