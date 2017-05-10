@@ -1,4 +1,4 @@
-# Install script for directory: /Users/didi/cpp
+# Install script for directory: /home/luoxing/cpp/iptables
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -27,14 +27,16 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "0")
+endif()
+
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/didi/cpp/iptables/lib/googletest/cmake_install.cmake")
-  include("/Users/didi/cpp/iptables/dataStruct/cmake_install.cmake")
-  include("/Users/didi/cpp/iptables/learn/cmake_install.cmake")
-  include("/Users/didi/cpp/iptables/test/cmake_install.cmake")
-  include("/Users/didi/cpp/iptables/src/cmake_install.cmake")
-  include("/Users/didi/cpp/iptables/fb/cmake_install.cmake")
+  include("/home/luoxing/cpp/iptables/libipq/cmake_install.cmake")
+  include("/home/luoxing/cpp/iptables/libiptc/cmake_install.cmake")
+  include("/home/luoxing/cpp/iptables/libxtables/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +48,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/didi/cpp/iptables/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/luoxing/cpp/iptables/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

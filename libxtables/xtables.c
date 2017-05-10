@@ -15,7 +15,8 @@
  *	along with this program; if not, write to the Free Software
  *	Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
-#include "config.h"
+// todo
+// #include "config.h"
 #include <ctype.h>
 #include <errno.h>
 #include <fcntl.h>
@@ -225,7 +226,8 @@ void xtables_init(void)
 		        "use XTABLES_LIBDIR.\n");
 		return;
 	}
-	xtables_libdir = XTABLES_LIBDIR;
+	// todo 
+        //xtables_libdir = XTABLES_LIBDIR;
 }
 
 void xtables_set_nfproto(uint8_t nfproto)
